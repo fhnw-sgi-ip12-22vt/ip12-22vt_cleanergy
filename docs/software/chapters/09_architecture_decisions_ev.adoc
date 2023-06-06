@@ -1,0 +1,51 @@
+[[section-design-decisions]]
+== Architekturentscheidungen
+Dieses Kapitel dokumentiert und erklärt alle getroffenen Architekturentscheidungen.
+
+=== GUI Umsetzung mit JavaFX/JavaFXML
+****
+.Entscheidung und Begründung
+* Für die visuelle Umsetzung haben wir uns entschieden JavaFX zu benutzen mit der Library JavaFXML
+* JavaFXML ermöglicht, vor allem mit einem Design-Tool wie Scenebuilder, ein ansehnliches Frontend zu erstellen ohne grosse Mühe und Programmiererfahrung.
+
+.Einflussfaktoren
+- Qualitätsziel Attraktivität
+- Bisherige Erfahrungen mit Technologien
+- Randbedingungen
+****
+
+=== Anti-cheating Massnahmen
+****
+.Entscheidung und Begründung
+* Wir haben gemeinsam mit dem Kunden entschieden, keine Massnahmen gegen Betrügen zu entwickeln
+* Der Nutzen für die Benutzer ist relativ klein und der Arbeitsaufwand im Verhältnis viel zu gross
+
+.Einflussfaktoren
+* Qualitätsziel Attraktivität
+* Arbeitsaufwand
+* Nutzen
+****
+
+=== Verwendung von J2mod Library für Anemometer
+****
+.Entscheidung und Begründung
+* Für das Auslesen der Informationen vom Anemometer, haben wir uns für die Java Library J2mod entschieden
+* Es ist nach langer Recherche und dem Vergleichen von Libraries sowie dem Testen, die einzige Library gewesen, die funktioniert hat und auf einem aktuellen Stand ist
+
+.Einflussfaktoren
+* Nutzen
+* Arbeitsaufwand
+****
+
+=== Übergang Zonen
+****
+.Entscheidung und Begründung
+* Die Spieler können nur in eine neue Zone übertreten, wenn ein Spieler eine Quizfrage korrekt beantwortet hat
+* Wir haben dies mit dem Kunden besprochen am 10. Mai 2023 um den Lerneffekt sicherzustellen
+
+.Einflussfaktoren
+* Nutzen
+* Qualitätsziel Lerneffekt
+****
+
+

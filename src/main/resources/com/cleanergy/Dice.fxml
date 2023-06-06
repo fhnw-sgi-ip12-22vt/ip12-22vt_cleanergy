@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="playerTitle" layoutX="450.0" layoutY="143.0" text="drücke deinen Knopf um zu stoppen!">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="72.0" />
+         </font></Label>
+      <Label fx:id="lblField" layoutX="641.0" layoutY="910.0" text="Bewegen Sie sich zum neuen Feld">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ivPlayer" fitHeight="150.0" fitWidth="150.0" layoutX="200.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ivDice" fitHeight="400.0" fitWidth="400.0" layoutX="400.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ivDiceAdvantage" fitHeight="400.0" fitWidth="400.0" layoutX="1200.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

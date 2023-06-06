@@ -1,0 +1,19 @@
+= TC 1.1: Ein Ausschalten
+****
+
+.Beschreibung:
+Bei diesem Test soll geprüft werden, ob das Produkt ein und ausgeschaltet werden kann.
+
+.Annahmen und Voraussetzungen:
+Damit das Produkt eingeschaltet werden kann muss eine Stromversorgung vorhanden sein.
+
+
+.Auszuführende Schritte:
+1. Einstecken des Steckers in die Stromversorgung.
+2. Drücken des roten Knopfes.
+
+.erwartetes Ergebnis:
+Das grüne LED sollte leuchten
+
+
+

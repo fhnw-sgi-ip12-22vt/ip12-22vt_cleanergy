@@ -1,0 +1,55 @@
+[[section-solution-strategy]]
+== Lösungsstrategie
+Dieses Kapitel liefert einen Überblick über die grundlegenden Entscheidungen und Lösungsansätze, die den Entwurf und die Implementierung des Systems prägen.
+
+=== Entscheidungen zur Technologie
+
+****
+[cols="1,2" options="header"]
+|===
+|Technologie|Details
+|Elektronik Komponenten|Möglichst simple Technologie, damit man es einfach verkabeln und in Betrieb nehmen kann
+|Anemometer|Wir verwenden ein Anemometer aus dem PI-Shop, damit man es einfach verkabeln und in Betrieb nehmen kann
+|Monitor| Wir verwenden einen einfachen Monitor via HDMI Anschluss um die Bildausgabe so einfach wie möglich zu gestalten und gleichzeitig unser Budget nicht zu stark zu beanspruchen
+|===
+****
+
+=== Entscheidungen zur Top-Level-Zerlegung
+
+****
+Das System wird in folgende Teile aufgeteilt
+
+* Würfel
+* Gamemaster, welcher die Runden leitet
+* Die Anzeige für eine grafische Oberfläche
+* Kommunikation zu Sensoren
+[cols="1,2" options="header"]
+|===
+|Entscheidung|Details
+|MVC|Im Rahmen der Architektur wenden wir die MVC Strukturierung an für unsere Software
+|Buttons|Im Rahmen des Interaktion mit dem Spiel werden Buttons verwendet
+|Sensoren|Im Rahmen der Sensorik verwenden wir ein Anemometer via Modbus
+****
+
+=== Entscheidungen zur Erreichung der Qualitätsziele
+
+****
+[cols="1,2" options="header"]
+|===
+|Qualitätsziel |Lösungsansätze
+|Benutzerfreundlichkeit | Simple Interaktion und leicht verständliche Regeln sowie Anleitungen
+|Langlebigkeit|Robustes Material und wiederstandsfähige Elektronikkomponenten
+|Wartbar|Strukturierte Software und Spielbrett aufbau mit einfachem Elektronikzugang
+|Spielbalance|Minigames für ein breites Publikum und nicht zu schwierige Fakten und Quizfragen
+|===
+****
+
+=== Entscheidungen zu Organisatorischem
+****
+[cols="1,2" options="header"]
+|===
+|Entscheidung|Details
+|Anpassung Komplexität|Wir haben entschieden, die Komplexität und Grösse des Produkts einzuschränken aufgrund der veränderten Mitgliederanzahl im Projektteam
+|Kommunikationskanäle|Wir haben uns dazu entschieden, Teamintern Discord zu verwenden und mit den Kunden sowie dem Teamcoach Microsoft Teams
+****
+

@@ -1,0 +1,15 @@
+= TC 2.1: GameMasterController - Korrekter Ablauf
+
+.Beschreibung:
+Bei diesem Test soll geprüft werden, ob der GameMasterController die jeweiligen Mingames korrekt aufschaltet und der generelle Ablauf sauber läuft.
+
+.Annahmen und Voraussetzungen:
+Die Spieler sind registriert und das Spiel beginnt.
+
+.Auszuführende Schritte:
+1. Spielzug ausführen
+2. Prüfen ob jeweils der korrekte Übergang erfolgt ist
+
+.Erwartetes Ergebnis:
+ALLE Spielzüge sollen einen korrekte Übergang zur Folge haben ansonsten ist etwas nicht korrekt.
+

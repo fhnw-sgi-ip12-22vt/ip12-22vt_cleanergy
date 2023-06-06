@@ -1,0 +1,53 @@
+.slider .track{
+    -fx-background-color: linear-gradient(red 35%, green 50%, red 65%);
+    -fx-pref-width:15;
+}
+
+.slider .thumb{
+    -fx-background-color: yellow;
+    -fx-pref-width: 30;
+
+}
+
+.water{
+    -fx-background-color: #00aee2;
+}
+.earth{
+    -fx-background-color: #4fe601;
+}
+.air{
+    -fx-background-color: #8e8e8e;
+}
+.sun{
+    -fx-background-color: #fbe20e;
+}
+.background{
+    -fx-background-color: #f4ead9;
+    -fx-background-image: url("images/backgroundImage.jpg");
+}
+
+.buttons{
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+.title{
+    -fx-border-color: black;
+    -fx-border-width: 3; 
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.rounded{
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.shade{
+    -fx-effect: dropshadow(two-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.circle{
+    -fx-border-radius: 200;
+    -fx-background-radius: 200;
+}

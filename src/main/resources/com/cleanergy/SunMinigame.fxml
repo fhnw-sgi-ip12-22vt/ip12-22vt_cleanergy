@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Slider fx:id="sldP1" blockIncrement="1.0" layoutX="560.0" layoutY="200.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="50.0" />
+      <Slider fx:id="sldP3" blockIncrement="1.0" layoutX="1060.0" layoutY="200.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="50.0" />
+      <Slider fx:id="sldP2" blockIncrement="1.0" layoutX="810.0" layoutY="200.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="50.0" />
+      <Slider fx:id="sldP4" blockIncrement="1.0" layoutX="1310.0" layoutY="200.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="50.0" />
+      <ImageView fx:id="ivAir" fitHeight="100.0" fitWidth="100.0" layoutX="1285.0" layoutY="750.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/air.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivEarth" fitHeight="100.0" fitWidth="100.0" layoutX="785.0" layoutY="750.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/earth.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivSun" fitHeight="100.0" fitWidth="100.0" layoutX="1035.0" layoutY="750.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/sun.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivWater" fitHeight="100.0" fitWidth="100.0" layoutX="535.0" layoutY="750.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/water.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

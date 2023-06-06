@@ -1,0 +1,18 @@
+== Test 2
+
+[%autowidth]
+|===
+|Datum | 05.03.23
+|Verantwortlich | Serhii Moshtakov
+|===
+
+include::TestCases_Zuverlaessigkeit/03_SpielzugAusführen.adoc[]
+
+*Status:* +
+Erfolgreich
+
+*Tatsächliches Ergebnis:* +
+Der Spielzug wurde erfolgreich ausgeführt, gewürftelte Zahl wurde korrekt angezeigt.
+
+*Bemerkungen:* +
+Dies hat für alle registrierten Spieler wiederholt im Spielverlauf funktioniert und läuft stabil.

@@ -1,0 +1,34 @@
+= Coding Conventions
+
+== Verwendete Konventionen
+****
+.Wichtige Code-Konventionen
+* Packagenamen immer klein, Klassen immer CamelCase, Variabeln und Methodennamen sind drinkingCamelCase, Konstanten und Enums sind UPPER_CASE;
+* Einrücken für Blocks, mit 1 Tabulator/ 4 Leerzeichen;
+* Zeilen sind max. 120 Zeichen lang;
+* Sprache für die Namens-Vergebungen von Klassen, Variablen, etc. ist Englisch;
+* Keine Mehrfachdeklarationen pro Zeile;
+* Öffnende Klammer auf der vorherigen Zeile, schliessende auf eine neue Zeile;
+* Verkettungen sind umgebrochen auf neue Zeilen mit 8 Leerzeichen Einrückung;
+* JavaDoc wird für Klassen und Methoden erstellt.
+
+.Code Komplexität:
+* Klassen sollten, wenn möglich 1000 Zeilen nicht überschreiten
+* Methodengrösse kleiner als 25 Zeilen.
+
+.Trennung von Zuständigkeiten:
+* Jede Klasse/Methode hat eine Aufgabe
+
+.Sonstige Coding-Konventionen:
+* Namen des Files https://www.oracle.com/java/technologies/javase/codeconventions-filenames.html ;
+* File Organisation https://www.oracle.com/java/technologies/javase/codeconventions-fileorganization.html ;
+* Comments https://www.oracle.com/java/technologies/javase/codeconventions-comments.html ;
+* Statements https://www.oracle.com/java/technologies/javase/codeconventions-statements.html ;
+* Programming practices https://www.oracle.com/java/technologies/javase/codeconventions-programmingpractices.html .
+****
+
+== Sicherstellung der Einhaltung der Konventionen
+****
+* Wir verwenden eine einheitliche link:IntellijSchemaEnergieversorgung.xml[Schemadatei], welche ebenfalls in diesem Ordner vorhanden ist +
+* Wir arbeiten ALLE mit IntelliJ und importieren diese Datei, welche die Formatierung übernimmt
+****

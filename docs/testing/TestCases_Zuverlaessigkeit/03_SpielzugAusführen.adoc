@@ -1,0 +1,14 @@
+= TC 1.2: Spielzug ausführen
+
+.Beschreibung:
+Bei diesem Test soll geprüft werden, ob ein Spielzug erfolgreich ausgeführt wird
+
+.Annahmen und Voraussetzungen:
+Das Spiel wurde erfolgreich gestartet und die Spieler haben sich mit Betätigen des Buttons angemeldet. Es ist nun der erste Spieler an der Reihe mit Würfeln.
+
+.Auszuführende Schritte:
+1. Button drücken wenn sich der Würfel dreht
+2. Die Augenzahl des Würfels auf dem Spielbrett fahren
+
+.Erwartetes Ergebnis:
+Das ausgewählte Feld sollte mit dem Symbol des Spielers markiert werden und der nächste Spieler sollte an der Reihe sein

@@ -1,0 +1,14 @@
+= TC 3.1: Bonuswürfel anzeigen
+
+.Beschreibung:
+Bei diesem Test soll geprüft werden, ob der zweite Würfel angezeigt wird wenn ein Spieler das Minigame gewonnen hat.
+
+.Annahmen und Voraussetzungen:
+Man befindet sich im Spiel und soeben hat Spieler 1 das Minigame gewonnen.
+
+.Auszuführende Schritte:
+1. Minigame gewinnen
+2. Schauen ob bei der persönlichen Würfelrunde ein zweiter Würfel angezeigt wird
+
+.Erwartetes Ergebnis:
+Es sollen zwei Würfel drehen und das Ergebnis des Besseren wird gezählt.

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lblMinigame" alignment="CENTER" layoutX="735.0" layoutY="110.0" prefHeight="170.0" minWidth="-Infinity" styleClass="title" text="Minispiel" textAlignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutX="967.0" layoutY="350.0" prefHeight="382.0" prefWidth="898.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ivButtonAnimation" fitHeight="400.0" fitWidth="400.0" layoutX="500.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ivMinigameAnimation" fitHeight="400.0" fitWidth="400.0" layoutX="100.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="527.0" layoutY="820.0" prefHeight="58.0" prefWidth="865.0" text="Drücke deinen Knopf um fortzufahren...">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ivWater" fitHeight="100.0" fitWidth="100.0" layoutX="653.0" layoutY="936.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/water.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivEarth" fitHeight="100.0" fitWidth="100.0" layoutX="803.0" layoutY="936.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/earth.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivSun" fitHeight="100.0" fitWidth="100.0" layoutX="953.0" layoutY="936.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/sun.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivAir" fitHeight="100.0" fitWidth="100.0" layoutX="1103.0" layoutY="936.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/air.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivOkWater" fitHeight="75.0" fitWidth="75.0" layoutX="703.0" layoutY="911.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/ok.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivOkEarth" fitHeight="75.0" fitWidth="75.0" layoutX="853.0" layoutY="911.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/ok.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivOkSun" fitHeight="75.0" fitWidth="75.0" layoutX="1003.0" layoutY="911.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/ok.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivOkAir" fitHeight="75.0" fitWidth="75.0" layoutX="1153.0" layoutY="911.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/ok.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

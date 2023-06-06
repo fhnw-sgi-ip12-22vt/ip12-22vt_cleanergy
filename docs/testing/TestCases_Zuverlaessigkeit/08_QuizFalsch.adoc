@@ -1,0 +1,16 @@
+= TC 3.1: Quizfrage bei Zonenübergang - Falsche Antwort
+
+.Beschreibung:
+Bei diesem Test wird eine Zonenübergangsfrage getriggert, diese falsch beantwortet und dann kontrolliert und die Zone für alle Spieler die danach darüber hinaus würfeln offen ist.
+
+.Annahmen und Voraussetzungen:
+Ein Spieler muss eine Zone soeben mit seinem Würfelwurf übertreten haben.
+
+.Auszuführende Schritte:
+1. Würfelwurf ausführen
+2. Quizfrage falsch beantworten
+3. Prüfen ob der nächste Spieler der die Zone betreten kann eine Quizfrage erhält.
+
+.Erwartetes Ergebnis:
+Der Spieler der die Zone übertreten hat soll eine Quizfrage erhalten und diese falsch beantworten. Danach sollen die restlichen Spieler die Zone nicht übertreten können sondern eine Quizfrage erhalten.
+

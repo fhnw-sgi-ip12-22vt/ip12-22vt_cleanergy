@@ -1,0 +1,18 @@
+== Test 3
+
+[%autowidth]
+|===
+|Datum | 05.03.2023
+|Verantwortlich | Serhii Moshtakov
+|===
+
+include::TestCases_Zuverlaessigkeit/04_GewinnerErmitteln.adoc[]
+
+*Status:* +
+Erfolgreich
+
+*Tatsächliches Ergebnis:* +
+Das Spiel ermittelt den Gewinner korrekt und gibt diesen auf dem Bildschirm aus. Das Spiel wird beendet.
+
+*Bemerkungen:* +
+Bei diesem Test soll geprüft werden, ob das Spiel einen Gewinner korrekt ermittelt.

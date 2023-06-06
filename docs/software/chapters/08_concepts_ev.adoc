@@ -1,0 +1,51 @@
+[[section-concepts]]
+== Querschnittliche Konzepte
+Dieses Kapitel beschreibt die querschnittlichen Konzepte, die für das Verständnis der Architektur und der Implementierung des Systems relevant sind.
+
+=== Architekturmuster
+****
+* Cleanergy verfolgt das MVC Muster für die Software Architektur
+* Durch diese Trennung der Verantwortlichkeiten ist eine gute Übersicht gegeben, die Wartbarkeit gewährleistet und die Erweiterbarkeit ermöglicht
+****
+
+=== User Experience
+****
+* Cleanergy verfolgt einen einfach verständlichen und intuitiven Ansatz
+* Benutzer sollen einfach verstehen können, was sie tun sollen und können
+* Dies wird durch visualisierte Tutorials und die Verwendung von Symbolen ermöglicht
+****
+
+=== Sicherheitskonzepte
+****
+* Es werden keine Daten gespeichert und es besteht keine Internetverbindung
+* Somit sind keine speziellen Sicherheitskonzepte notwendig
+****
+
+=== Testbarkeit
+****
+* Um eine möglichst hohe Zuverlässigkeit des Systems sicherzustellen, werden verschiedene Tests durchgeführt
+* Hierbei wird insbesondere auf die Testbarkeit des Codes geachtet in Form von Junit Tests, um Fehler frühzeitig erkennen und beheben zu können
+* Es werden ebenfalls regelmässige Usability Tests mit der Zielgruppe durchgeführt um sicherzustellen, dass das Spiel korrekt funktioniert und auch die Anforderungen erfüllt
+****
+
+=== Skalierbarkeit
+****
+* Cleanergy wird im Rahmen der Architektur so gestaltet, dass eine einfache Erweiterung des Spiels jederzeit noch möglich wäre
+* Es können einfach neue Mininispiele integrierte werden
+* Es können einfach weitere Sensoren und sonstige Inputdevices angeschlossen und integriert werden
+****
+
+=== Ablaufsteuerung
+****
+* Die Ablaufsteuerung, welche durch das Control erfolgt, ist klar verständlich und mehrfach getestet worden um eine stabile Funktion zu gewährleisten
+* Durch die verständliche Programmierung kann zu einem späteren Zeitpunkt ohne grosse Schwierigkeiten eine Änderung am Spielablauf vorgenommen werden
+****
+
+=== Fehlerbehandlung
+****
+* Mögliche Fehler im Spielverlauf werden durch die Software gefangen und es wird eine passende Fehlermeldung auf dem Bildschirm angegeben
+* Mittels Anleitungen ist es dem Auftraggeber dann möglich, den entsprechenden Fehler zu beheben
+****
+
+
+

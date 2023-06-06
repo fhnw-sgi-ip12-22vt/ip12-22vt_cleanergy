@@ -1,0 +1,32 @@
+= Produktdokumentation
+
+In dieser Dokumentation befinden sich alle relevanten Dokumente des Produktes Cleanergy. Es beinhaltet die folgenden Teildokumentationen:
+
+- link:software/sad.adoc[Softwaredokumentation (SAD)]
+- link:hardware/Hardware.adoc[Hardwaredokumentation]
+- link:testing/[Testdokumentation]
+- link:coding-conventions/coding_conventions.adoc[Programmierkonventionen]
+
+== Softwaredokumentation
+****
+- Die link:software/sad.adoc[Softwaredokumentation] ist nach den Vorgaben von arc42 erstellt worden (https://arc42.org/)
+- Vorab wurde eine grobe link:software/chapters/system-idee.adoc[System-Idee] erstellt
+****
+
+== Hardwaredokumentation
+****
+- Die link:hardware/Hardware.adoc[Hardwaredokumentation] enthält alles, was zum Bauen des Produkts benötigt wird
+- Sie finden hier eine Teileliste, Files und relevante Abmessungen
+****
+
+== Testdokumentation
+****
+- In der link:testing/[Testdokumentation] befinden sich Junit Tests sowie manuelle Tests
+- Die Testprotokolle sind alle dokumentiert und einsichtbar
+****
+
+== Programmierkonventionen
+****
+- In den link:coding-conventions/coding_conventions.adoc[Programmierkonventionen] befinden sich alle festgelegten Regeln für das Schreiben des Codes von Cleanergy
+- Die link:coding-conventions/intellij-schema-energieversorgung.xml[Schemadatei] ist ebenfalls dort zu finden
+****

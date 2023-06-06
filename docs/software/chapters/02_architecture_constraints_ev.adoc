@@ -1,0 +1,39 @@
+[[section-architecture-constraints]]
+== Randbedingungen
+Dieses Kapitel listet und erklärt alle relevanten Randbedingungen, welche im Zusammenhang mit dem System stehen.
+
+=== Technische Randbedingungen
+
+****
+[cols="1,2" options="header"]
+|===
+|Randbedingung |Beschreibung
+|Hardware | Es muss ein Raspberry PI verwendet werden
+|Programmiersprache | Es muss Java verwendet werden
+|Library | Vorgegeben ist Pi4J sowie Java FX/FXML
+|===
+****
+
+=== Organisatorische Randbedingungen
+
+****
+[cols="1,2" options="header"]
+|===
+|Randbedingung|Beschreibung
+|Budget|Unsere Materialkosten sollten CHF 200.- nicht übersteigen
+|Zeitbegrenzung|Das Projekt muss bis am 14. Juni 2023 an den Kunden übergeben werden
+|Projektorganisation|Als Prozessmodell muss RUP verwendet werden
+|===
+****
+
+=== Politische Randbedingungen
+
+****
+[cols="1,2" options="header"]
+|===
+|Randbedingung|Beschreibung
+|Inhalt|Der Inhalt des Projekts muss politisch, moralisch und ethisch in Ordnung sein und darf nicht gegen Anstand und Sitte verstossen
+|Barrierefreiheit|Das Spiel soll allen Spielern eine möglichst gleichberechtigte Teilnahme ermöglichen, egal welche Stärken und Schwächen sie haben
+|===
+****
+

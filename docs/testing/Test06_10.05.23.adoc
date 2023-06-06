@@ -1,0 +1,17 @@
+== Test 6
+
+[%autowidth]
+|===
+|Datum | 10.05.23
+|Verantwortlich | Serhii Moshtakov
+|===
+
+include::TestCases_Zuverlaessigkeit/06_BonusWuerfel.adoc[]
+
+*Status:* Erfolgreich
+
+*Tatsächliches Ergebnis:* +
+Der zweite Würfel wird angezeigt und das Ergebnis des besseren Wurfs gewählt.
+
+*Bemerkungen:* +
+Es hat im Verlauf eines kompletten Durchlaufs immer funktioniert.

@@ -1,0 +1,17 @@
+== Test 5
+
+[%autowidth]
+|===
+|Datum | 10.05.23
+|Verantwortlich | Serhii Moshtakov
+|===
+
+include::TestCases_Zuverlaessigkeit/05_KorrekterSpielablauf.adoc[]
+
+*Status:* Erfolgreich
+
+*Tatsächliches Ergebnis:* +
+Alle Aufschaltungen funktionieren korrekt und der Ablauf ist fehlerfrei und wie geplant.
+
+*Bemerkungen:*
+Dieser Test wurde bei mehreren kompletten Spieldurchläufen durchgeführt da er sehr wichtig ist!

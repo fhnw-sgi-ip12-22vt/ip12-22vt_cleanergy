@@ -1,0 +1,15 @@
+= TC 1.3: Gewinner ermitteln
+
+.Beschreibung:
+Bei diesem Test soll geprüft werden, ob das Spiel einen Gewinner korrekt ermittelt
+
+.Annahmen und Voraussetzungen:
+Das Spiel läuft und es sind mindestens zwei Spieler registriert.
+
+.Auszuführende Schritte:
+1. Spielen bis ein Spieler den Gewinnzug ausführen kann
+2. Ausführen des Gewinnspielzugs
+3. Überprüfen der Gewinnsituation
+
+.Erwartetes Ergebnis:
+Das Spiel sollte den Gewinner korrekt ermitteln und eine Meldung mit dem Gewinner anzeigen.

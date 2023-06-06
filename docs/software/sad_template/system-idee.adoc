@@ -1,0 +1,31 @@
+= Systemidee Vorlage
+Als Grundlage Ihrer Entwurfstätigkeiten sollten Sie eine Vorstellung wichtiger Systemeigenschaften und Anforderungen besitzen und mindestens folgende Fragen über das System beantwortet haben.
+
+Umfang dieses Dokuments 1-3 A4 Seiten.
+
+== Kernaufgabe des Systems
+****
+
+
+****
+
+== Kategorie von System
+****
+
+****
+
+== Wesentliche Qualitätsanforderungen
+****
+
+
+****
+
+== Relevante Stakeholder
+****
+
+****
+
+== Schnittstellen zu externen Systemen
+****
+
+****

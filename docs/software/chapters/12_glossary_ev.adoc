@@ -1,0 +1,23 @@
+[[section-glossary]]
+== Glossar
+Dieses Kapitel erklärt Begriffe, die für Personen ausserhalb des Projekts eher unbekannt sind.
+
+[cols="1,2" options="header"]
+|===
+|Begriff |Definition
+
+|Cheating
+|Betrügen
+
+|Gamemaster
+|Interner Name für das Control, welches das Spiel steuert
+
+|Anemometer
+|Windgeschwindigkeitsmesssensor
+
+|ModBus
+|Kommunikationsprotokoll für das Anemometer
+
+|RS485
+|Anschluss nach Industriestandard für die Kommunikation mit Sensoren
+|===

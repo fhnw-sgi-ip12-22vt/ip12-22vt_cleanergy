@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="740.0" layoutY="110.0" prefHeight="170.0" prefWidth="440.0" styleClass="title" text="Tutorial">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="96.0" />
+         </font>
+      </Label>
+      <Pane layoutX="640.0" layoutY="350.0" prefHeight="100.0" prefWidth="640.0">
+         <children>
+            <Label layoutX="140.0" layoutY="22.0" text="Spielt als Wasserkraft">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="48.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="15.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/water.PNG" />
+               </image>
+            </ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="water" />
+            <String fx:value="rounded" />
+         </styleClass>
+      </Pane>
+      <Pane layoutX="640.0" layoutY="460.0" prefHeight="100.0" prefWidth="640.0">
+         <children>
+            <Label layoutX="140.0" layoutY="22.0" text="Spielt als Erdwärme">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="48.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="15.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/earth.PNG" />
+               </image>
+            </ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="earth" />
+            <String fx:value="rounded" />
+         </styleClass>
+      </Pane>
+      <Pane fx:id="paneSun" layoutX="640.0" layoutY="570.0" prefHeight="100.0" prefWidth="640.0" visible="false">
+         <children>
+            <Label layoutX="140.0" layoutY="22.0" text="Spielt als Solarenergie">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="48.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="15.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/sun.PNG" />
+               </image>
+            </ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="sun" />
+            <String fx:value="rounded" />
+         </styleClass>
+      </Pane>
+      <Pane fx:id="paneAir" layoutX="640.0" layoutY="680.0" prefHeight="100.0" prefWidth="640.0" visible="false">
+         <children>
+            <Label layoutX="140.0" layoutY="22.0" text="Spielt als Windenergie">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="48.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="15.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/air.PNG" />
+               </image>
+            </ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="air" />
+            <String fx:value="rounded" />
+         </styleClass>
+      </Pane>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="643.0" layoutY="936.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/water.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="527.0" layoutY="820.0" prefHeight="58.0" prefWidth="865.0" text="Drücke deinen Knopf um fortzufahren...">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="793.0" layoutY="936.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/earth.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivSun" fitHeight="100.0" fitWidth="100.0" layoutX="943.0" layoutY="936.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/sun.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivAir" fitHeight="100.0" fitWidth="100.0" layoutX="1093.0" layoutY="936.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/air.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivOkWater" fitHeight="75.0" fitWidth="75.0" layoutX="693.0" layoutY="911.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/ok.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivOkEarth" fitHeight="75.0" fitWidth="75.0" layoutX="843.0" layoutY="911.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/ok.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivOkSun" fitHeight="75.0" fitWidth="75.0" layoutX="993.0" layoutY="911.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/ok.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivOkAir" fitHeight="75.0" fitWidth="75.0" layoutX="1143.0" layoutY="911.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/ok.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

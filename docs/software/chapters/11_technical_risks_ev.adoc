@@ -1,0 +1,22 @@
+[[section-technical-risks]]
+== Risiken und technische Schulden
+Dieses Kapitel listet die wichtigsten Risiken und technischen Schulden auf, welche im Zusammenhang mit dem Projekt stehen und sortiert diese nach Priorität.
+
+***
+[cols="1,1,2,2" options="header"]
+|===
+|Priorität|Risiko |Beschreibung |Minderung/Lösung
+|1|Zeitmangel | Wir haben nur begrenzt viel Zeit für die Vollendung des Projekts und manche Anfoderungen könne ndeshalb nicht erfüllt werden|Priorisierung der Funktionalität des Systems, als Code Schönheit und Priorisierung der Anfoderungen auf Notwendigkeit.
+|2|mangeldes Vorwissen|Da die meisten wenig Programmiererfahrung und Projekterfahrung haben kann zu unnötiger Code Komplexität führen, sowie langsameres arbeiten. | Kann durch Fortbildung von den benutzten Systemen verringert werden.
+|5|Knöpfe funktionieren nicht|Es liegt noch wenig Wissen vor wie man Knöpfe, vor allem die grossen Knöpfe, mit dem Rapberry Pi verdrahtet |Dokumentation von Pi4j lesen und Dokumentation der Knöpfe anschauen.
+|6| Stromprobleme| Wir haben wenig Erfahrung mit Elektronik und wissen deshalb nicht ob der Rapberry Pi genug Strom liefern kann für die Komponenten| nur nötige Komponenten sollten an sein. Zusätzliche Stromversorgung nachforschen.
+|7|Minigame funktioniert nicht| Die gewünschte Umsetzung eines Minigames ist nicht machbar| Prototyping und Research
+|11|Position des Spielers wird falsch erkannt| Ein Requirement ist das der Gamemaster die Positionen der Spieler kennt| Junit-Tests schreiben um korrekte Funktionsweise zu verifizieren
+|12| Minispiel wird nicht gestartet| Wir sind nicht komplett sicher ob die Umsetzung des Spielablaufs mit der Steuerung durch den Gamemaster so funktionieren kann wie wir uns das vorstellen | Research und logik programmieren um diese zu testen
+|14|Bildschirm funktioniert nicht|Es könnte ein defekter Bildschirm geliefert werden| Direkt nach Erhalt auspacken und auf Funktionstüchtigkeit testen
+|15|Raspberry Pi funktioniert nicht| Der Raspberry Pi kann während der Entwicklung kaputt gehen|Vorsichtig verwenden und im schlimmsten Fall Ersatz besorgen
+|16|Zu wenige GPIO Pins| Der Raspberry  Pi hat nur eine begrenzte Anzahl Pins und evtl. nicht alle Komponenten können dann angeschlossen werden| Bevor neue Komponenten gekauft werden prüfen, ob dafür genug Pins vorhanden sind und sonst einen Extender kaufen
+|17|Raspberry Pi überhitzt im Spielbrett| Da der Raspberry Pi im Spielbrett verbaut ist und es während der Benutzung Wärme generiert kann es zu Überhitzung führen| Lüftlöcher einbauen und genügend Raum lassen
+|===
+
+***

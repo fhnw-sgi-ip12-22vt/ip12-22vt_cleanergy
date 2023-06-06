@@ -1,0 +1,15 @@
+= TC 1.1: Spiel starten
+
+
+.Beschreibung:
+Bei diesem Test soll geprüft werden, ob das Spiel erfolgreich gestartet wird.
+
+.Annahmen und Voraussetzungen:
+Das Spiel wurde gestartet und befindet sich im Startbildschirm
+
+.Auszuführende Schritte:
+1. Starten der Anwendung.
+2. Klicken auf die Buttons.
+
+.Erwartetes Ergebnis: 
+Das Spiel soll erfolgreich gestartet werden und die Spieler sollten sich im Spiel aktivieren können via Buttonklick.

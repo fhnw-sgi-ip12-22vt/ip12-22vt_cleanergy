@@ -1,0 +1,17 @@
+== Test 7
+
+[%autowidth]
+|===
+|Datum | 10.05.23
+|Verantwortlich | Serhii Moshtakov
+|===
+
+include::TestCases_Zuverlaessigkeit/07_QuizKorrekt.adoc[]
+
+*Status:* Erfolgreich
+
+*Tatsächliches Ergebnis:* +
+ES hat genauso geklappt wie das erwartete Ergebnis beschreibt. Dies im Verlauf mehrer ganzer Spielrunden.
+
+*Bemerkungen:* +
+-

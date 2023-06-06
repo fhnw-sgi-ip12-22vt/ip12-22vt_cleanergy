@@ -1,0 +1,49 @@
+== Systemidee
+
+Dieses Kapitel beschreibt die grundlegenden Systemeigenschaften und Anforderungen zur Unterstützung der Entwurfstätigkeit
+
+=== Kernaufgabe des Systems
+****
+Unser System stellt die Unterschiede zwischen den erneuerbaren Energien spielerisch dar unter Einbezug von physischen Elementen. +
+Das Spiel richtet sich an Sekundarschüler und der Fokus liegt auf einfacher Verständlichkeit und Spielspass.
+
+.Begriffe der Fachdomäne:
+* Physische Elemente
+* Benutzerfreundlichkeit
+* Robustheit
+* Transportfähigkeit
+* Mehrwert
+* Spielerisch
+****
+
+=== Kategorie von System
+****
+Unser System Cleanergy ist ein eingebettetes System, da unser System nur auf einem Raspberry Pi laufen sollte und wir auf dessen Funktionen zurückgreifen werden
+****
+
+=== Wesentliche Qualitätsanforderungen
+****
+
+* Benutzerfreundlich: +
+Einfache und intuitive Bedienung, einfach verständliche Spielregeln und Ablauf
+
+* Langlebig: +
+Der physische Teil soll langlebig gebaut sein, damit es von Primeo längerfristig ausgestellt werden kann
+
+* Wartbar: +
+Es muss einfach möglich sein, dass System zu portieren, zu verändern, zu erweitern oder Bugfixing zu betreiben
+****
+
+=== Relevante Stakeholder
+****
+* Die Zielgruppe, bestehend aus Jugendlichen von 12-16 Jahren (Sekundarschüler), ist ein relevanter Stakeholder, denn das System wird für sie entwickelt.
+
+* Der Auftraggeber Primeo Energie stellt die Anforderung, dass unser System der Zielgruppe spielerisch den Unterschied zwischen den verschiedenen erneuerbaren Energien näher bringt
+
+* Die FHNW stellt im Rahmen der Projektschiene IP12 zusätzliche Anforderungen an unser System, wie das Benutzen eines Raspberry PIs und das Festlegen unseres Budgets
+****
+
+=== Schnittstellen zu externen Systemen
+****
+Das Projekt Energieversorgung hat keine Schnittstellen zu externen Systemen
+****

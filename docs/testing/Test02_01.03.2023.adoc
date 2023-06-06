@@ -1,0 +1,18 @@
+== Test 1
+
+[%autowidth]
+|===
+|Datum | 01.03.2023
+|Verantwortlich | Serhii Moshtakov
+|===
+
+include::TestCases_Zuverlaessigkeit/02_SpielStarten.adoc[]
+
+*Status:* +
+Erfolgreich
+
+*Tatsächliches Ergebnis:* +
+Die Buttons konnten gedrückt werden und die entsprechenden Spieler wurden im Spiel registriert.
+
+*Bemerkungen:* +
+Bei diesem Test soll geprüft werden, ob das Spiel erfolgreich gestartet wird.

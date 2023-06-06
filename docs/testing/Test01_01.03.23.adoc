@@ -1,0 +1,18 @@
+== Test 0
+
+[%autowidth]
+|===
+|Datum | 01.03.2023
+|Verantwortlich | Serhii Moshtakov
+|===
+
+include::TestCases_Zuverlaessigkeit/01_EinAusschalten.adoc[]
+
+*Status:* +
+Ausstehend
+
+*Tatsächliches Ergebnis:* +
+-
+
+*Bemerkungen:* +
+Knopf ist noch nicht befestigt. Bei Anschluss an Strom jedoch funktioniert alles.

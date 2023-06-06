@@ -1,0 +1,17 @@
+== Test 7
+
+[%autowidth]
+|===
+|Datum | 10.05.23
+|Verantwortlich | Serhii Moshtakov
+|===
+
+include::TestCases_Zuverlaessigkeit/08_QuizFalsch.adoc[]
+
+*Status:* Erfolgreich
+
+*Tatsächliches Ergebnis:* +
+Es hat genauso geklappt wie das erwartete Ergebnis beschreibt. Dies im Verlauf mehrerer ganzer Spielrunden.
+
+*Bemerkungen:* +
+Wie gewünscht erhalten die Spieler nur so lange Quizfragen bis einer die Zone freigeschaltet hat mit einer korrekten Antwort.
