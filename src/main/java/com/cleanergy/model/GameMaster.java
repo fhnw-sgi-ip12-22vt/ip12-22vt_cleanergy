@@ -100,15 +100,14 @@ public class GameMaster {
       case 0:
         return State.QUIZ;
       case 1:
-        // // this is switching of the minigames depending on which one was the last one.
-        // if (lastPlayedMinigame == State.SONNENMINIGAME) {
-        //   this.lastPlayedMinigame = State.ANEMOMINIGAME;
-        //   return State.ANEMOMINIGAME;
-        // } else {
-        //   this.lastPlayedMinigame = State.SONNENMINIGAME;
-        //   return State.SONNENMINIGAME;
-        // }
-        return State.SONNENMINIGAME;
+        // this is switching of the minigames depending on which one was the last one.
+        if (lastPlayedMinigame == State.SONNENMINIGAME) {
+          this.lastPlayedMinigame = State.ANEMOMINIGAME;
+          return State.ANEMOMINIGAME;
+        } else {
+          this.lastPlayedMinigame = State.SONNENMINIGAME;
+          return State.SONNENMINIGAME;
+        }
     }
     return null;
   }

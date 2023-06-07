@@ -17,7 +17,7 @@
          </font>
       </Label>
       <ImageView fx:id="ivPlayer" fitHeight="150.0" fitWidth="150.0" layoutX="200.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="ivDice" fitHeight="400.0" fitWidth="400.0" layoutX="400.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="ivDiceAdvantage" fitHeight="400.0" fitWidth="400.0" layoutX="1200.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ivDice" fitHeight="400.0" fitWidth="400.0" layoutX="400.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ivDiceAdvantage" fitHeight="400.0" fitWidth="400.0" layoutX="1200.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

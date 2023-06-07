@@ -2,13 +2,66 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.cleanergy</groupId>
-  <artifactId>cleanergy</artifactId>
+  <artifactId>Cleanergy</artifactId>
   <name>cleanergy</name>
-  <version>1</version>
-  <url>http://www.example.com</url>
+  <version>0.0.1</version>
   <build>
-    <finalName>cleanergy</finalName>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>${maven-antrun-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>${maven-compiler-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>${maven-dependency-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>${maven-jar-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>${maven-javadoc-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>${maven-surefire-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>${exec-maven-plugin.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
     <plugins>
+      <plugin>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-maven-plugin</artifactId>
+        <version>${javafx.plugin.version}</version>
+        <configuration>
+          <mainClass>${launcher.class}</mainClass>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.gluonhq</groupId>
+        <artifactId>gluonfx-maven-plugin</artifactId>
+        <version>${gluonfx.plugin.version}</version>
+        <configuration>
+          <target>${gluonfx.target}</target>
+          <mainClass>${launcher.class}</mainClass>
+          <releaseConfiguration>
+            <vendor>Pi4J</vendor>
+            <description>${app.description}</description>
+            <skipSigning>true</skipSigning>
+          </releaseConfiguration>
+        </configuration>
+      </plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${maven-compiler-plugin.version}</version>
@@ -20,19 +73,63 @@
         </configuration>
       </plugin>
       <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>${exec-maven-plugin.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <executable>java</executable>
+          <arguments>
+            <argument>--module-path</argument>
+            <argument>${project.build.directory}/distribution</argument>
+            <argument>--module</argument>
+            <argument>${launcher.class}</argument>
+          </arguments>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>copy-dependencies</id>
+            <phase>process-sources</phase>
+            <goals>
+              <goal>copy-dependencies</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/distribution</outputDirectory>
+              <includeScope>runtime</includeScope>
+              <excludeTransitive>false</excludeTransitive>
+              <overWriteReleases>false</overWriteReleases>
+              <overWriteSnapshots>true</overWriteSnapshots>
+              <overWriteIfNewer>true</overWriteIfNewer>
+              <excludeGroupIds>org.openjfx</excludeGroupIds>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>${maven-jar-plugin.version}</version>
         <configuration>
           <archive>
             <manifest>
-              <mainClass>${main.class}</mainClass>
+              <addClasspath>true</addClasspath>
+              <classpathPrefix>lib/</classpathPrefix>
+              <mainClass>com.cleanergy.SuperApp</mainClass>
             </manifest>
           </archive>
+          <outputDirectory>${project.build.directory}/distribution</outputDirectory>
         </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>${maven-shade-plugin.version}</version>
+        <version>3.4.1</version>
         <executions>
           <execution>
             <phase>package</phase>
@@ -41,19 +138,119 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
         <configuration>
-          <transformers>
-            <transformer />
-          </transformers>
+          <additionalOptions>
+            <additionalOption>--module-path</additionalOption>
+            <additionalOption>${project.build.directory}/distribution</additionalOption>
+          </additionalOptions>
         </configuration>
       </plugin>
     </plugins>
   </build>
+  <profiles>
+    <profile>
+      <id>jfx-remote-run-kiosk</id>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>transfer</id>
+                <phase>install</phase>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+                <configuration>
+                  <target>
+                    <sshexec />
+                    <scp>
+                      <fileset>
+                        <exclude />
+                      </fileset>
+                    </scp>
+                    <sshexec />
+                    <sshexec />
+                  </target>
+                </configuration>
+              </execution>
+            </executions>
+            <dependencies>
+              <dependency>
+                <groupId>org.apache.ant</groupId>
+                <artifactId>ant-jsch</artifactId>
+                <version>${ant-jsch.version}</version>
+              </dependency>
+            </dependencies>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>jfx-remote-run-X11</id>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>transfer</id>
+                <phase>install</phase>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+                <configuration>
+                  <target>
+                    <sshexec />
+                    <scp>
+                      <fileset>
+                        <exclude />
+                      </fileset>
+                    </scp>
+                    <sshexec />
+                    <sshexec />
+                  </target>
+                </configuration>
+              </execution>
+            </executions>
+            <dependencies>
+              <dependency>
+                <groupId>org.apache.ant</groupId>
+                <artifactId>ant-jsch</artifactId>
+                <version>${ant-jsch.version}</version>
+              </dependency>
+            </dependencies>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>debug</id>
+      <properties>
+        <pi.remote.jvmOptions>-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=*:5005</pi.remote.jvmOptions>
+      </properties>
+    </profile>
+    <profile>
+      <id>desktop</id>
+      <properties>
+        <gluonfx.target>host</gluonfx.target>
+      </properties>
+    </profile>
+    <profile>
+      <id>pi</id>
+      <properties>
+        <gluonfx.target>linux-aarch64</gluonfx.target>
+      </properties>
+    </profile>
+  </profiles>
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
-      <version>5.8.2</version>
+      <version>5.9.0</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>
@@ -73,7 +270,7 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.8.2</version>
+      <version>5.9.0</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>
@@ -88,16 +285,27 @@
     </dependency>
   </dependencies>
   <properties>
-    <maven-jar-plugin.version>3.1.0</maven-jar-plugin.version>
-    <maven.compiler.target>${java.version}</maven.compiler.target>
-    <main.class>com.cleanergy.App</main.class>
+    <ant-jsch.version>1.10.9</ant-jsch.version>
+    <maven-javadoc-plugin.version>3.3.1</maven-javadoc-plugin.version>
+    <maven-antrun-plugin.version>3.0.0</maven-antrun-plugin.version>
     <slf4j.version>1.7.30</slf4j.version>
-    <java.version>11</java.version>
+    <javafx.version>18.0.2</javafx.version>
+    <junit.version>5.9.0</junit.version>
+    <maven-jar-plugin.version>3.2.1</maven-jar-plugin.version>
+    <app.identifier>${launcher.class}</app.identifier>
     <maven.compiler.source>${java.version}</maven.compiler.source>
-    <maven-shade-plugin.version>3.2.4</maven-shade-plugin.version>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <pi4j.version>2.0</pi4j.version>
     <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-    <junit.version>5.8.2</junit.version>
+    <pi.drm.enable.cursor>true</pi.drm.enable.cursor>
+    <app.description>RaspPiFX app</app.description>
+    <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
+    <javafx.plugin.version>0.0.8</javafx.plugin.version>
+    <exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
+    <gluonfx.plugin.version>1.0.15</gluonfx.plugin.version>
+    <launcher.class>com.cleanergy/com.cleanergy.SuperApp</launcher.class>
+    <maven-dependency-plugin.version>3.2.0</maven-dependency-plugin.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>17</java.version>
+    <pi4j.version>2.0</pi4j.version>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
   </properties>
 </project>

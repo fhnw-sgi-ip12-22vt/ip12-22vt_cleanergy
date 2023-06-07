@@ -2,6 +2,10 @@
 Dieses Projekt beinhaltet den gesamten Code des IPv12 - Energieprojekt Game Master Bildschirms.
 
 ## Wie brauche ich dieses Repository.
+Um es einfach zu builden in ein jar file wird folgender command verwendet:
+```
+mvn clean install
+```
 
 ### Verwendung
 
@@ -102,14 +106,12 @@ https://www.cs.technik.fhnw.ch/confluence20/display/VT122209/Requirements
 Die gesamte Doku ist abgelegt unter: [dem Ordner docs](./docs)
 
 ### Was ist noch nicht gemacht bzw. Funktioniert nicht:
-- Gamemaster.java#selectMiniGame:<br>
-Der Anemometer ist grundsätzlich komplett implementiert aber hier noch auskommentiert. Der Grund dafür ist, dass das UI bzw Anemominigameview.fxml noch nicht sauber genug ist. Wird versucht in den nächsten Tagen noch fertig zu machen.
 
 - Translation support:<br>
 Translation support ist noch nicht gemacht aber kann via javafx bundles erstellt werden. (https://stackoverflow.com/questions/60377780/javafx-internationalization-without-fxml)
 
 - Memory issues:<br>
-Aktuell stocken die GIF und die gesamte App nach einer Weile. Unsere These ist, dass das GameMasterView#setupModelToUiBindings unendlich instanzen kreiert und sie nicht wieder aufräumt. Da das ganze Asynchron ist, werden viele Threads erstellt und womöglich nicht mehr zeitgerecht geschlossen was die Memory volllaufen lässt. Wird versucht in den nächsten Tagen noch zu beheben, da es sonst das Spiel unspielbar macht.
+Aktuell stocken die GIF und die gesamte App nach einer Weile. Unsere These ist, dass das GameMasterView#setupModelToUiBindings unendlich listeners kreiert und sie nicht wieder aufräumt. Da das ganze Asynchron ist, werden viele Threads erstellt und womöglich nicht mehr zeitgerecht geschlossen was die Memory volllaufen lässt. Wird versucht in den nächsten Tagen noch zu beheben, da es sonst das Spiel unspielbar macht. 
 
 
 

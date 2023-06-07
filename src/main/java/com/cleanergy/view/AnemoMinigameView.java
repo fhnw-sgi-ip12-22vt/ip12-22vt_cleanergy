@@ -46,7 +46,7 @@ public class AnemoMinigameView implements ViewMixin<GameMaster, GameMasterContro
   @FXML
   private void initialize() {
     anemoImage.setImage(
-        new Image(App.class.getResource("images/anemometer/anemometer.jpeg").toExternalForm()));
+        new Image(App.class.getResource("images/anemometer/large_anemo.png").toExternalForm()));
   }
 
   // this starts the whole cycle of the minigame including the pause at the start for every player

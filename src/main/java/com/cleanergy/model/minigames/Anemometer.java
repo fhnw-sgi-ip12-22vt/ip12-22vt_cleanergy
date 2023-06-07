@@ -12,7 +12,7 @@ public class Anemometer {
   public static void init() {
     try {
       SerialParameters params = new SerialParameters();
-      params.setPortName("cu.usbserial-1220");
+      params.setPortName("ttyUSB0");
       master = new ModbusSerialMaster(params);
       // reading holding registers
       master.connect();

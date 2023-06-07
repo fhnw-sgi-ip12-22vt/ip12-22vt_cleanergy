@@ -126,12 +126,20 @@ public class BreakView implements ViewMixin<GameMaster, GameMasterController> {
             case QUIZBORDER:
                 lblMinigame.setText("Entsperrung der Zone");
                 lblDescription.setText(
-                    "Sie kommen mit ihrem Wurf als erster über eine neue Zone!\n" + 
-                    "Wenn Sie die folgende Frage richtig beantworten können Sie über die Zone laufen,\n" + 
-                    "falls nicht kommen Sie nur zum letzten Feld vor dem Fluss.");
+                    "Sie kommen mit dem Wurf als erster über eine neue Zone!\n" + 
+                    "Wenn du die folgende Frage richtig beantworten kannst du über die Zone laufen,\n" + 
+                    "falls nicht kommst du nur zum letzten Feld vor dem Fluss.");
                 ivMinigameAnimation.setImage(new Image(App.class.getResourceAsStream("images/animationQuiz.gif")));
-
-
+                break;
+            case ANEMOMINIGAME:
+                lblMinigame.setText("Windrad Minispiel");
+                lblDescription.setText(
+                    "Nach kurzer Anlaufzeit\n" +
+                    "musst du so stark in das Windrad hineinblasen wie du kannst!\n" + 
+                    "Du kriegst 15 Sekunden.");
+                break;
+                // TODO animation for anemometer?
+                //ivMinigameAnimation.setImage(new Image(App.class.getResourceAsStream("images/animationQuiz.gif")));
         }
     }
 
